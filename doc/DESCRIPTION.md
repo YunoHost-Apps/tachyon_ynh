@@ -1,0 +1,1 @@
+Tachyon is a fast, secure and modern self-hosted webmail: mail, contacts and calendars in one PHP application. It is a fork of SnappyMail that speaks IMAP, SMTP, Sieve, CardDAV and CalDAV, loads in about 120 KB, and has no tracking or third-party scripts.

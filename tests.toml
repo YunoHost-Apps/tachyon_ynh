@@ -1,0 +1,5 @@
+test_format = 1.0
+
+[default]
+
+    # Add "test_upgrade_from.<commit>.name" entries once a first version is released.

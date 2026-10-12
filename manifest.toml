@@ -1,0 +1,82 @@
+packaging_format = 2
+
+id = "tachyon"
+name = "Tachyon"
+description.en = "Fast, secure, modern web-based email client with contacts and calendars (SnappyMail fork)"
+description.fr = "Client de messagerie Web rapide, sécurisé et moderne avec contacts et agendas (fork de SnappyMail)"
+
+version = "4.4.2~ynh1"
+
+maintainers = []
+
+[upstream]
+license = "AGPL-3.0-only"
+website = "https://tachyonmail.app/"
+admindoc = "https://github.com/kimusan/Tachyon/wiki/Admin-Manual"
+userdoc = "https://github.com/kimusan/Tachyon/wiki"
+code = "https://github.com/kimusan/Tachyon"
+
+[integration]
+yunohost = ">= 12.1.39"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = true
+
+disk = "50M"
+ram.build = "150M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/tachyon"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://github.com/kimusan/Tachyon/releases/download/v4.4.2/tachyon-4.4.2.tar.gz"
+        sha256 = "ce9fcb38347930a860ad47a7527929a55f17bab720cbfb2ae14b6cf716ea1e48"
+        in_subdir = false
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "^tachyon-[0-9\\.]*tar.gz$"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+    group = "www-data:r-x"
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = [
+        "mariadb-server",
+        "php8.4-uuid",
+        "php8.4-imagick",
+        "php8.4-sqlite3",
+        "php8.4-tidy",
+        "php8.4-dom",
+        "php8.4-intl",
+        "php8.4-mysql",
+        "php8.4-curl",
+        "php8.4-gd",
+        "php8.4-cli",
+        "php8.4-xml",
+        "php8.4-mbstring",
+        "php8.4-ldap",
+    ]
+
+    [resources.database]
+    type = "mysql"
