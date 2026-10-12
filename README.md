@@ -1,4 +1,9 @@
-# Tachyon for YunoHost
+<h1>
+  <img src="./logo.png" width="32px" alt="Logo of Tachyon">
+  Tachyon for YunoHost
+</h1>
+
+<p align="center"><img src="./doc/logo-wide.png" alt="Tachyon" width="360"></p>
 
 [Tachyon](https://tachyonmail.app/) is a fast, secure, modern self-hosted webmail (a fork of SnappyMail) with mail, contacts and calendars. This package installs it on a [YunoHost](https://yunohost.org) server with SSO, a MariaDB database for contacts, and PHP-FPM + NGINX.
 
