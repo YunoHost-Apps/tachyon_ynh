@@ -4,13 +4,8 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-<<<<<<< HEAD
   <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/tachyon.png" width="32px" alt="Logo of Tachyon">
   Tachyon, packaged for YunoHost
-=======
-  <img src="./conf/logo.png" width="32px" alt="Logo of Tachyon">
-  Tachyon for YunoHost
->>>>>>> 434097b (Add the logo under logos/)
 </h1>
 
 Fast, secure, modern web-based email client with contacts and calendars (SnappyMail fork)
