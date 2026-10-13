@@ -4,7 +4,7 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/tachyon.png" width="32px" alt="Logo of Tachyon">
+  <img src="https://raw.githubusercontent.com/YunoHost/tachyon_ynh/main/logos/tachyon.png" width="32px" alt="Logo of Tachyon">
   Tachyon, packaged for YunoHost
 </h1>
 
