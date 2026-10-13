@@ -43,6 +43,13 @@ ynh_config_add_nginx
 ynh_config_add_logrotate
 
 #=================================================
+# SET APP ICON
+#=================================================
+ynh_script_progression "Setting app icon..."
+
+set_app_logo
+
+#=================================================
 # END OF SCRIPT
 #=================================================
 
