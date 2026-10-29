@@ -5,7 +5,7 @@ name = "Tachyon"
 description.en = "Fast, secure, modern web-based email client with contacts and calendars (SnappyMail fork)"
 description.fr = "Client de messagerie Web rapide, sécurisé et moderne avec contacts et agendas (fork de SnappyMail)"
 
-version = "4.4.6~ynh1"
+version = "4.4.7~ynh1"
 
 maintainers = []
 
@@ -46,8 +46,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/kimusan/Tachyon/releases/download/v4.4.6/tachyon-4.4.6.tar.gz"
-        sha256 = "c3eeb044ee931efd9a3cbb70ffd6684943688ff8001af54543904529a218db4c"
+        url = "https://github.com/kimusan/Tachyon/releases/download/v4.4.7/tachyon-4.4.7.tar.gz"
+        sha256 = "ba6947862eceafd57a953b547dd5fb446d5632623e6651283573a82beeb26510"
         in_subdir = false
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset = "^tachyon-[0-9\\.]*tar.gz$"
